@@ -8,20 +8,21 @@
 
     <Button
         android:id="@+id/buttonPlusMinus"
-        android:text="+/-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
+        android:text="+/-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/buttonTocka"
-        android:text="."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
+        android:text="."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonNula" />
 
@@ -34,13 +35,14 @@
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonPlusMinus" />
+
     <Button
         android:id="@+id/buttonPodjeljeno"
-        android:text="/"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
+        android:text="/"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonTocka" />
 
@@ -63,6 +65,7 @@
         android:text="2"
         app:layout_constraintBottom_toTopOf="@+id/buttonNula"
         app:layout_constraintStart_toEndOf="@+id/buttonJedan" />
+
     <Button
         android:id="@+id/buttonTri"
         android:layout_width="wrap_content"
@@ -72,6 +75,7 @@
         android:text="3"
         app:layout_constraintBottom_toTopOf="@+id/buttonTocka"
         app:layout_constraintStart_toEndOf="@+id/buttonDva" />
+
     <Button
         android:id="@+id/buttonPlus"
         android:layout_width="wrap_content"
@@ -81,6 +85,7 @@
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/buttonPodjeljeno"
         app:layout_constraintStart_toEndOf="@+id/buttonTri" />
+
     <Button
         android:id="@+id/buttonCetiri"
         android:layout_width="wrap_content"
@@ -90,6 +95,7 @@
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/buttonJedan"
         app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/buttonPet"
         android:layout_width="wrap_content"
@@ -99,6 +105,7 @@
         android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/buttonDva"
         app:layout_constraintStart_toEndOf="@+id/buttonCetiri" />
+
     <Button
         android:id="@+id/buttonSest"
         android:layout_width="wrap_content"
@@ -108,6 +115,7 @@
         android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/buttonTri"
         app:layout_constraintStart_toEndOf="@+id/buttonPet" />
+
     <Button
         android:id="@+id/buttonMinus"
         android:layout_width="wrap_content"
@@ -116,7 +124,8 @@
         android:layout_marginStart="8dp"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
-        app:layout_constraintStart_toEndOf="@+id/buttonSest"/>
+        app:layout_constraintStart_toEndOf="@+id/buttonSest" />
+
     <Button
         android:id="@+id/buttonSedam"
         android:layout_width="wrap_content"
@@ -126,6 +135,7 @@
         android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/buttonCetiri"
         app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/buttonOsam"
         android:layout_width="wrap_content"
@@ -134,7 +144,8 @@
         android:layout_marginStart="8dp"
         android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/buttonPet"
-        app:layout_constraintStart_toEndOf="@+id/buttonSedam"/>
+        app:layout_constraintStart_toEndOf="@+id/buttonSedam" />
+
     <Button
         android:id="@+id/buttonDevet"
         android:layout_width="wrap_content"
@@ -143,7 +154,8 @@
         android:layout_marginStart="8dp"
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/buttonSest"
-        app:layout_constraintStart_toEndOf="@+id/buttonOsam"/>
+        app:layout_constraintStart_toEndOf="@+id/buttonOsam" />
+
     <Button
         android:id="@+id/buttonPuta"
         android:layout_width="wrap_content"
@@ -152,7 +164,8 @@
         android:layout_marginStart="8dp"
         android:text="x"
         app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
-        app:layout_constraintStart_toEndOf="@+id/buttonDevet"/>
+        app:layout_constraintStart_toEndOf="@+id/buttonDevet" />
+
     <Button
         android:id="@+id/buttonObrisi"
         android:layout_width="wrap_content"
@@ -162,6 +175,7 @@
         android:text="Obrisi"
         app:layout_constraintBottom_toTopOf="@+id/buttonSedam"
         app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/buttonOdgovor"
         android:layout_width="wrap_content"
@@ -172,6 +186,35 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonDevet"
         app:layout_constraintStart_toEndOf="@+id/buttonObrisi" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="Zadatak"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="165dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Odgovor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonObrisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
