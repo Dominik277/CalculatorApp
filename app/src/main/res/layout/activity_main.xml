@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
-        android:id="@+id/buttonPlusMinus"
+        android:id="@+id/buttonOcisti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:text="+/-"
+        android:text="Ocisti"
+        android:textSize="16dp"
+        android:onClick="onClickListenerPlusMinus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -23,6 +27,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="."
+        android:textSize="20dp"
+        android:onClick="onClickListenerTocka"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonNula" />
 
@@ -33,8 +39,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="0"
+        android:textSize="20dp"
+        android:onClick="onClickListenerNula"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonPlusMinus" />
+        app:layout_constraintStart_toEndOf="@+id/buttonOcisti" />
 
     <Button
         android:id="@+id/buttonPodjeljeno"
@@ -43,6 +51,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="/"
+        android:textSize="20dp"
+        android:onClick="onClickListenerPodjeljeno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonTocka" />
 
@@ -53,7 +63,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/buttonPlusMinus"
+        android:textSize="20dp"
+        android:onClick="onClickListenerJedan"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOcisti"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -63,6 +75,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="2"
+        android:textSize="20dp"
+        android:onClick="onClickListenerDva"
         app:layout_constraintBottom_toTopOf="@+id/buttonNula"
         app:layout_constraintStart_toEndOf="@+id/buttonJedan" />
 
@@ -73,6 +87,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="3"
+        android:textSize="20dp"
+        android:onClick="onClickListenerTri"
         app:layout_constraintBottom_toTopOf="@+id/buttonTocka"
         app:layout_constraintStart_toEndOf="@+id/buttonDva" />
 
@@ -83,6 +99,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="+"
+        android:textSize="20dp"
+        android:onClick="onClickListenerPlus"
         app:layout_constraintBottom_toTopOf="@+id/buttonPodjeljeno"
         app:layout_constraintStart_toEndOf="@+id/buttonTri" />
 
@@ -93,6 +111,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="4"
+        android:textSize="20dp"
+        android:onClick="onClickListenerCetiri"
         app:layout_constraintBottom_toTopOf="@+id/buttonJedan"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -103,6 +123,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="5"
+        android:textSize="20dp"
+        android:onClick="onClickListenerPet"
         app:layout_constraintBottom_toTopOf="@+id/buttonDva"
         app:layout_constraintStart_toEndOf="@+id/buttonCetiri" />
 
@@ -113,6 +135,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="6"
+        android:textSize="20dp"
+        android:onClick="onClickListenerSest"
         app:layout_constraintBottom_toTopOf="@+id/buttonTri"
         app:layout_constraintStart_toEndOf="@+id/buttonPet" />
 
@@ -123,6 +147,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="-"
+        android:textSize="20dp"
+        android:onClick="onClickListenerMinus"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
         app:layout_constraintStart_toEndOf="@+id/buttonSest" />
 
@@ -133,6 +159,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="7"
+        android:textSize="20dp"
+        android:onClick="onClickListenerSedam"
         app:layout_constraintBottom_toTopOf="@+id/buttonCetiri"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -143,6 +171,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="8"
+        android:textSize="20dp"
+        android:onClick="onClickListenerOsam"
         app:layout_constraintBottom_toTopOf="@+id/buttonPet"
         app:layout_constraintStart_toEndOf="@+id/buttonSedam" />
 
@@ -153,6 +183,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="9"
+        android:textSize="20dp"
+        android:onClick="onClickListenerDevet"
         app:layout_constraintBottom_toTopOf="@+id/buttonSest"
         app:layout_constraintStart_toEndOf="@+id/buttonOsam" />
 
@@ -163,6 +195,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="x"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
         app:layout_constraintStart_toEndOf="@+id/buttonDevet" />
 
@@ -173,6 +206,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="Obrisi"
+        android:textSize="20dp"
+        android:onClick="onClickListenerObrisi"
         app:layout_constraintBottom_toTopOf="@+id/buttonSedam"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -183,11 +218,13 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="Odgovor"
+        android:textSize="20dp"
+        android:onClick="onClickListenerOdgovor"
         app:layout_constraintBottom_toTopOf="@+id/buttonDevet"
         app:layout_constraintStart_toEndOf="@+id/buttonObrisi" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextZadatak"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="33dp"
@@ -195,14 +232,14 @@
         android:ems="10"
         android:hint="Zadatak"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOdgovor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextOdgovor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="165dp"
@@ -214,7 +251,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextZadatak" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

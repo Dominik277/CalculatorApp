@@ -2,21 +2,42 @@ package srd.slavonac.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     Button buttonNula,buttonJedan,buttonDva,buttonTri,buttonCetiri,
             buttonPet,buttonSedam,buttonSest,buttonOsam,buttonDevet,
-            buttonPlus,buttonPlusMinus,buttonPuta,buttonPodijeljeno,
+            buttonPlus,buttonOcisti,buttonPuta,buttonPodijeljeno,
             buttonMinus,buttonObrisi,buttonOdgovor,buttonTocka;
+    EditText editTextOdgovor,editTextZadatak;
+    public final char ZBRAJANJE = '+';
+    public final char ODUZIMANJE = '-';
+    public final char MNOZENJE = '*';
+    public final char DJELJENJE = '/';
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setUpViews();
+        gumbNula();
+        gumbJedan();
+        gumbDva();
+        gumbTri();
+        gumbCetiri();
+        gumbPet();
+        gumbSest();
+        gumbSedam();
+        gumbOsam();
+        gumbDevet();
+    }
 
+    public void setUpViews(){
         buttonNula = findViewById(R.id.buttonNula);
         buttonJedan = findViewById(R.id.buttonJedan);
         buttonDva = findViewById(R.id.buttonDva);
@@ -28,127 +49,114 @@ public class MainActivity extends AppCompatActivity {
         buttonOsam = findViewById(R.id.buttonOsam);
         buttonDevet = findViewById(R.id.buttonDevet);
         buttonPlus = findViewById(R.id.buttonPlus);
-        buttonPlusMinus = findViewById(R.id.buttonPlusMinus);
+        buttonOcisti = findViewById(R.id.buttonOcisti);
         buttonPuta = findViewById(R.id.buttonPuta);
         buttonPodijeljeno = findViewById(R.id.buttonPodjeljeno);
         buttonMinus = findViewById(R.id.buttonMinus);
         buttonObrisi = findViewById(R.id.buttonObrisi);
         buttonOdgovor = findViewById(R.id.buttonOdgovor);
         buttonTocka = findViewById(R.id.buttonTocka);
+        editTextZadatak = findViewById(R.id.editTextZadatak);
+        editTextOdgovor = findViewById(R.id.editTextOdgovor);
+    }
 
+    public void gumbNula(){
         buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "0");
             }
         });
+    }
 
-        buttonJedan.setOnClickListener(new View.OnClickListener() {
+    public void gumbJedan(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "1");
             }
         });
+    }
 
-        buttonDva.setOnClickListener(new View.OnClickListener() {
+    public void gumbDva(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "2");
             }
         });
+    }
 
-        buttonTri.setOnClickListener(new View.OnClickListener() {
+    public void gumbTri(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "3");
             }
         });
+    }
 
-        buttonCetiri.setOnClickListener(new View.OnClickListener() {
+    public void gumbCetiri(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "4");
             }
         });
+    }
 
-        buttonPet.setOnClickListener(new View.OnClickListener() {
+    public void gumbPet(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "5");
             }
         });
+    }
 
-        buttonSest.setOnClickListener(new View.OnClickListener() {
+    public void gumbSest(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "6");
             }
         });
+    }
 
-        buttonSedam.setOnClickListener(new View.OnClickListener() {
+    public void gumbSedam(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "7");
             }
         });
+    }
 
-        buttonOsam.setOnClickListener(new View.OnClickListener() {
+    public void gumbOsam(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "8");
             }
         });
+    }
 
-        buttonDevet.setOnClickListener(new View.OnClickListener() {
+    public void gumbDevet(){
+        buttonNula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editTextZadatak.setText(editTextZadatak.getText().toString() + "9");
             }
         });
+    }
 
+    public void gumbPlus(){
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
-
-        buttonMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonPuta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonPodijeljeno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonObrisi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonOdgovor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonPlusMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
     }
+
 }
