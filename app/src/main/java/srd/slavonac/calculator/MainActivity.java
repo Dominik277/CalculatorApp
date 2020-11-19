@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     public final char ODUZIMANJE = '-';
     public final char MNOZENJE = '*';
     public final char DJELJENJE = '/';
+    public final char JEDNAKI = '0';
+    private double val1 = Double.NaN;
+    private double val2;
+    private char ACTION;
 
 
     @Override
@@ -154,9 +158,72 @@ public class MainActivity extends AppCompatActivity {
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                rjesavanje();
+                ACTION = ZBRAJANJE;
+                editTextOdgovor.setText(String.valueOf(val1) + "+");
+                editTextZadatak.setText(null);
             }
         });
     }
 
+    public void gumbMinus(){
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rjesavanje();
+                ACTION = ODUZIMANJE;
+                editTextOdgovor.setText(String.valueOf(val1) + "-");
+                editTextZadatak.setText(null);
+            }
+        });
+    }
+
+    public void gumbPuta(){
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rjesavanje();
+                ACTION = MNOZENJE;
+                editTextOdgovor.setText(String.valueOf(val1) + "*");
+                editTextZadatak.setText(null);
+            }
+        });
+    }
+
+    public void gumbPodjeljeno(){
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rjesavanje();
+                ACTION = DJELJENJE;
+                editTextOdgovor.setText(String.valueOf(val1) + "/");
+                editTextZadatak.setText(null);
+            }
+        });
+    }
+
+    public void rjesavanje(){
+        if (!Double.isNaN(val1)){
+            val2 = Double.parseDouble(editTextZadatak.getText().toString());
+
+            switch (ACTION){
+                case ZBRAJANJE:
+                    val1 = val1 + val2;
+                    break;
+                case ODUZIMANJE:
+                    val1 = val1 - val2;
+                    break;
+                case MNOZENJE:
+                    val1 = val1 * val2;
+                    break;
+                case DJELJENJE:
+                    val1 = val1 / val2;
+                    break;
+                case JEDNAKI:
+                    break;
+            }
+        }else {
+            val1 = Double.parseDouble(editTextZadatak.getText().toString());
+        }
+    }
 }
