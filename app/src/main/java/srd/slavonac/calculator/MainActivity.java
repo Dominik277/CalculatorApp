@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         gumbSedam();
         gumbOsam();
         gumbDevet();
+        gumbMinus();
+        gumbPlus();
+        gumbPuta();
+        gumbPodjeljeno();
     }
 
     public void setUpViews(){
@@ -200,6 +204,34 @@ public class MainActivity extends AppCompatActivity {
                 editTextZadatak.setText(null);
             }
         });
+
+        buttonOdgovor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rjesavanje();
+                ACTION = JEDNAKI;
+                editTextOdgovor.setText(editTextOdgovor.getText()
+                        .toString() + String.valueOf(val2) + "=" + String.valueOf(val1));
+                editTextZadatak.setText(null);
+
+            }
+        });
+
+        buttonOcisti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (editTextZadatak.getText().length() > 0 ){
+                    CharSequence name = editTextZadatak.getText().toString();
+                    editTextZadatak.setText(name.subSequence(0,name.length()-1));
+                }else {
+                    val1 = Double.NaN;
+                    val2 = Double.NaN;
+                    editTextZadatak.setText(null);
+                    editTextOdgovor.setText(null);
+                }
+            }
+        });
+
     }
 
     public void rjesavanje(){
