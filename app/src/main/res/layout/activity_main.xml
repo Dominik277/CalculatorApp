@@ -23,10 +23,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button0" />
+        app:layout_constraintStart_toEndOf="@+id/buttonNula" />
 
     <Button
-        android:id="@+id/button0"
+        android:id="@+id/buttonNula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -61,7 +61,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="2"
-        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNula"
         app:layout_constraintStart_toEndOf="@+id/buttonJedan" />
     <Button
         android:id="@+id/buttonTri"
@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonTocka"
         app:layout_constraintStart_toEndOf="@+id/buttonDva" />
     <Button
-        android:id="@+id/buttonPLus"
+        android:id="@+id/buttonPlus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -115,7 +115,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/buttonPLus"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
         app:layout_constraintStart_toEndOf="@+id/buttonSest"/>
     <Button
         android:id="@+id/buttonSedam"
