@@ -6,13 +6,172 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/buttonPlusMinus"
+        android:text="+/-"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/buttonTocka"
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button0" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPlusMinus" />
+    <Button
+        android:id="@+id/buttonPodjeljeno"
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTocka" />
+
+    <Button
+        android:id="@+id/buttonJedan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlusMinus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintStart_toEndOf="@+id/buttonJedan" />
+    <Button
+        android:id="@+id/buttonTri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTocka"
+        app:layout_constraintStart_toEndOf="@+id/buttonDva" />
+    <Button
+        android:id="@+id/buttonPLus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPodjeljeno"
+        app:layout_constraintStart_toEndOf="@+id/buttonTri" />
+    <Button
+        android:id="@+id/buttonCetiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJedan"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/buttonPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDva"
+        app:layout_constraintStart_toEndOf="@+id/buttonCetiri" />
+    <Button
+        android:id="@+id/buttonSest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTri"
+        app:layout_constraintStart_toEndOf="@+id/buttonPet" />
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPLus"
+        app:layout_constraintStart_toEndOf="@+id/buttonSest"/>
+    <Button
+        android:id="@+id/buttonSedam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCetiri"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/buttonOsam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPet"
+        app:layout_constraintStart_toEndOf="@+id/buttonSedam"/>
+    <Button
+        android:id="@+id/buttonDevet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSest"
+        app:layout_constraintStart_toEndOf="@+id/buttonOsam"/>
+    <Button
+        android:id="@+id/buttonPuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
+        app:layout_constraintStart_toEndOf="@+id/buttonDevet"/>
+    <Button
+        android:id="@+id/buttonObrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Obrisi"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSedam"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/buttonOdgovor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Odgovor"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDevet"
+        app:layout_constraintStart_toEndOf="@+id/buttonObrisi" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
